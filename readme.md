@@ -1,25 +1,16 @@
-# 🛒 Express DMart API
+# 🛒 DMart Express API Project
 
-A simple backend application built using **Node.js** and **Express.js** that demonstrates modular routing for a supermarket management system. The project is organized into separate route files for customers, employees, products, and payments.
+A simple REST API built using **Node.js** and **Express.js** that simulates a basic DMart Management System. This project demonstrates route handling and API development using Express by providing endpoints for products, customers, employees, and payments.
 
----
+## 🚀 Features
 
-## 📖 About the Project
-
-This project demonstrates the basics of building a backend application with Express.js. It uses Express Router to organize API endpoints into separate modules, making the code more maintainable and scalable.
-
----
-
-## ✨ Features
-
-- Express.js server setup
-- Modular routing using Express Router
+- Product API
 - Customer API
 - Employee API
-- Product API
 - Payment API
-- Organized project structure
-- Beginner-friendly backend project
+- JSON based responses
+- Lightweight Express server
+- Easy API testing with Postman
 
 ---
 
@@ -28,111 +19,156 @@ This project demonstrates the basics of building a backend application with Expr
 - Node.js
 - Express.js
 - JavaScript
+- REST API
 
 ---
 
 ## 📂 Project Structure
 
-```
-express-dmart-api/
-│── routes/
+```text
+DMart-Project/
+│
+├── index.js
+├── package.json
+├── package-lock.json
+├── routes/
+│   ├── product.js
 │   ├── customer.js
 │   ├── employee.js
-│   ├── payment.js
-│   └── product.js
-│── outputs/
-│   ├── customer-api.png
-│   ├── employee-api.png
-│   ├── product-api.png
-│   ├── payment-api.png
-│   └── server-running.png
-│── index.js
-│── package.json
-│── package-lock.json
-│── README.md
-│── .gitignore
+│   └── payment.js
+│
+├── outputs/
+├── Code_Screenshots.docx
+└── README.md
+```
 
 ---
 
-## 🚀 Installation
+## 📥 Installation
 
-### Clone the repository
-
-```bash
-git clone https://github.com/Mohankumar1312/-Express-DMart-API-Project.git
-```
-
-### Navigate to the project directory
+Clone the repository:
 
 ```bash
-cd express-dmart-api
+git clone https://github.com/koushik-ops/DMart-Project.git
 ```
 
-### Install dependencies
+Move into the project directory:
+
+```bash
+cd DMart-Project
+```
+
+Install dependencies:
 
 ```bash
 npm install
 ```
 
-### Start the server
+---
+
+## ▶️ Run the Project
+
+Start the server:
 
 ```bash
 node index.js
 ```
 
-If your project uses a start script, you can also run:
+Server output:
 
-```bash
-npm start
+```text
+Server is running on http://localhost:3000
 ```
 
 ---
 
-## 📌 API Endpoints
+## 🌐 API Endpoints
 
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| GET | `/customer` | Customer routes |
-| GET | `/employee` | Employee routes |
-| GET | `/product` | Product routes |
-| GET | `/payment` | Payment routes |
+### Home Endpoint
+
+```http
+GET /
+```
+
+### Product Endpoint
+
+```http
+GET /product
+```
+
+### Customer Endpoint
+
+```http
+GET /customer
+```
+
+### Employee Endpoint
+
+```http
+GET /employee
+```
+
+### Payment Endpoint
+
+```http
+GET /payment
+```
 
 ---
 
-## 📚 Learning Outcomes
+## 🧪 Testing
 
-This project helped me understand:
+The APIs can be tested using:
 
-- Setting up an Express.js server
-- Creating modular routes
-- Organizing backend projects
-- Handling HTTP requests
-- Building RESTful APIs
-- Working with Node.js packages
+- Postman
+- Thunder Client
+- Browser
+- cURL
+
+Example:
+
+```text
+http://localhost:3000/product
+```
+
+---
+
+## 📸 Outputs
+
+Sample outputs and screenshots are available inside the `outputs` folder and `Code_Screenshots.docx`.
+
+---
+
+## 📚 Learning Objectives
+
+This project helps in understanding:
+
+- Express.js routing
+- REST API basics
+- JSON responses
+- Route organization
+- API testing using Postman
 
 ---
 
 ## 🔮 Future Enhancements
 
-- MongoDB integration
-- MySQL integration
-- CRUD operations
-- User authentication
-- JWT authorization
-- Request validation
-- Error handling middleware
-- Environment variable support
+- MongoDB Integration
+- CRUD Operations
+- Authentication
+- Admin Dashboard
+- Product Search and Filtering
 
 ---
 
 ## 👨‍💻 Author
 
-**Mohan**
+**Koushik Deb**
 
-GitHub: https://github.com/Mohankumar1312
+GitHub: https://github.com/koushik-ops
 
 ---
 
 ## 📄 License
 
-This project is created for learning and educational purposes.
+This project is intended for educational and learning purposes.
